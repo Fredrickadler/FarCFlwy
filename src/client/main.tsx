@@ -5,7 +5,7 @@ import "./index.css";
 
 // 🟣 Farcaster SDK imports
 import { initFrame } from "@farcaster/frame-sdk";
-import { NeynarAPIClient } from "neynar";
+import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 
 async function initFarcaster() {
   try {
