@@ -1,26 +1,48 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>FarC Flwy - MiniApp</title>
-    <meta name="description" content="Follow4Follow style Farcaster mini-app">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Follow4Follow style Farcaster mini-app" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <!-- 🟣 Farcaster Frame Meta Tags -->
-    <meta name="fc:frame" content="1">
-    <meta name="fc:frame:image" content="https://far-c-flwy.vercel.app/public/logo.png">
-    <meta name="fc:frame:post_url" content="https://far-c-flwy.vercel.app/api/frame-action">
-    <meta name="fc:frame:buttons" content='[
-      {"label":"Follow","action":"post"},
-      {"label":"Like","action":"post"}
-    ]'>
+    <meta name="fc:frame" content="1" />
+    <meta name="fc:frame:image" content="https://far-c-flwy.vercel.app/public/logo.png" />
+    <meta name="fc:frame:post_url" content="https://far-c-flwy.vercel.app/api/frame-action" />
+    <meta
+      name="fc:frame:buttons"
+      content='[
+        {"label": "Open App", "action": "link", "target": "https://far-c-flwy.vercel.app"},
+        {"label": "Follow Us", "action": "post"}
+      ]'
+    />
 
-    <meta property="og:title" content="FarC Flwy Mini-App">
-    <meta property="og:description" content="Earn coins by following or liking others on Farcaster.">
-    <meta property="og:image" content="https://far-c-flwy.vercel.app/public/logo.png">
+    <!-- Social Meta -->
+    <meta property="og:title" content="FarC Flwy Mini-App" />
+    <meta property="og:description" content="Earn coins by following or liking others on Farcaster." />
+    <meta property="og:image" content="https://far-c-flwy.vercel.app/public/logo.png" />
+    <meta property="og:url" content="https://far-c-flwy.vercel.app/public/frame.html" />
+    <meta property="og:type" content="website" />
   </head>
-  <body style="background:#0f0f11;color:white;text-align:center;padding:30px">
-    <h1>FarC Flwy MiniApp</h1>
-    <p>This page is the Farcaster frame entry. Share this link in Farcaster to see it in-feed.</p>
+
+  <body
+    style="
+      background-color: #0f0f11;
+      color: white;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      padding: 40px;
+    "
+  >
+    <img
+      src="https://far-c-flwy.vercel.app/public/logo.png"
+      alt="logo"
+      style="width: 80px; margin-bottom: 20px"
+    />
+    <h1>FarC Flwy Mini-App</h1>
+    <p style="opacity: 0.8">
+      Use the “Open App” button below to launch the full interactive mini-app.
+    </p>
   </body>
 </html>
